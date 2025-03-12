@@ -1,0 +1,57 @@
+header
+{
+    padding: 25px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .5px solid var(--color-side-text);
+
+}
+
+.header-fullname p
+{
+    font-family: var(--main-font-bold);
+    font-weight: 900;
+    font-size: 28px;
+}
+.header-age
+{
+    color: var(--color-side-text);
+}
+.header-jobtitle
+{
+    font-size: 20px;
+}
+
+.header-contact p
+{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.header-contact p:last-child
+{
+    margin-bottom: 0px;
+}
+
+
+@media  (min-width: 992px) {
+    .header-contact p
+    {
+        font-size: 16px;
+    }
+
+}
+
+@media  (max-width: 600px) {
+    .header-fullname p
+    {
+        font-size: 16px;
+    }
+    .header-age
+    {
+        font-size: 12px;
+    }
+
+}
+

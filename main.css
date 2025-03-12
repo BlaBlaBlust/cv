@@ -1,0 +1,264 @@
+.main
+{
+    padding: 25px 50px;
+    
+    
+}
+
+.main-experience
+{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: .5px solid var(--color-side-text);
+    margin-bottom: 15px;
+
+}
+
+.main-experience > span
+{
+    font-family: var(--main-font-bold);
+    font-size: 16px;
+    margin-right: 50px;
+}
+.work-cards
+{
+    width: 100%;
+}
+.work-card
+{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+}
+
+.work-card-title
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-card-company
+{
+    font-size: 16px;
+}
+
+.work-card-date
+{
+    font-size: 14px;
+    color: var(--color-side-text);
+}
+
+.work-card-job
+{
+    color: var(--color-side-text);
+}
+.work-card-date
+{
+    font-size: 14px;
+    color: var(--color-side-text);
+}
+.work-card-subtitle
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.work-card-description
+{
+    margin-top: 15px;
+}
+
+/*EDUCATION CARDS*/
+.main-education
+{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: .5px solid var(--color-side-text);
+
+}
+
+.main-education > span
+{
+    font-family: var(--main-font-bold);
+    font-size: 16px;
+    margin-right: 50px;
+}
+.education-cards
+{
+    width: 100%;
+}
+.education-card
+{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+}
+
+.education-card-name
+{
+    font-size: 16px;
+}
+.education-card-course
+{
+    color: var(--color-side-text);
+}
+.education-card-title
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-card-subtitle
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    text-wrap: wrap;
+    width: 50%;
+}
+
+.education-card-date
+{
+    font-size: 14px;
+    color: var(--color-side-text);
+}
+
+.education-card-description
+{
+    margin-top: 15px;
+}
+
+
+/*SKILLS*/
+
+.main-skills
+{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: .5px solid var(--color-side-text);
+    margin-top: 25px;
+}
+
+.main-skills > span
+{
+    font-family: var(--main-font-bold);
+    font-size: 16px;
+    margin-right: 50px;
+}
+
+.skills
+{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: (auto,1fr);
+    justify-items: center;
+    align-items: flex-start;
+}
+
+
+.skills ul
+{
+    list-style-type: none;
+    margin-bottom: 15px;
+
+}
+.skills ul li
+{
+    margin-top: 5px;
+    color: var(--color-side-text);   
+    transition: color 3 ease;
+}
+
+.skills ul li:hover, 
+.skills ul li:focus
+{
+    color: var(--color-main-text);
+    cursor: pointer;
+}
+.skills ul li:first-child
+{
+    font-size: 16px;
+    margin-top: 0px;
+    color: var(--color-main-text);
+}
+
+
+
+
+@media  (min-width: 992px) 
+{
+
+    .main-experience > span,
+    .main-education > span,
+    .main-skills > span
+    {
+        font-size: 24px;
+        margin-right: 100px;
+    }
+
+    
+
+    .work-card-company,
+    .work-card-subtitle,
+    .education-card-name,
+    .skills ul li:first-child
+    {
+        font-size: 24px;
+    }
+
+}
+
+
+@media  (max-width: 670px) 
+{
+    .main-experience > span,
+    .main-education > span,
+    .main-skills > span
+    {
+        font-size: 24px;
+        margin-right: 0;
+        margin-bottom: 25px;
+        align-self: center;
+    }
+    .main-experience,
+    .main-education,
+    .main-skills
+    {
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: .5px solid var(--color-side-text);
+        margin-bottom: 15px;
+
+    }   
+    .skills
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+    .skills ul
+    {   
+        margin: 0;
+        padding: 0;
+        align-self: center;
+        padding: 5px 5px;
+        margin-bottom: 15px;
+
+    }
+    .skills ul li:first-child
+    {
+       font-size: 24px;
+    }
+    .skills ul li
+    {
+       font-size: 16px;
+       text-align: center;
+
+    }
+}
+
